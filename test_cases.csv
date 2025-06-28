@@ -1,0 +1,56 @@
+TC ID,Module,Test Scenario,Test Steps,Expected Result,Priority,Status
+TC001,Authentication,Login with valid credentials,"1. Navigate to login page
+2. Enter valid email & password
+3. Click Login",User should be redirected to dashboard,High,Working fine
+TC002,Authentication,Login with invalid credentials,"1. Enter invalid email/password
+2. Click Login",Error message should be shown,High,Working fine
+TC003,Authentication,Register new user,"1. Go to Register page
+2. Fill details
+3. Submit",Account created and redirected to login,High,Working fine
+TC004,Resume Upload,Upload supported file (PDF),"1. Login
+2. Go to upload page
+3. Upload PDF file",Resume should upload and parse,High,Working fine
+TC005,Resume Upload,Upload unsupported file type,1. Upload .doc/.jpg etc.,Error message should appear,Medium,Assigned
+TC006,Job Role Selection,Select job role from dropdown,"1. Click dropdown
+2. Select a role",Role should be selected and stored,High,Working fine
+TC007,Resume Parsing,Parse uploaded resume,"1. Upload valid resume
+2. Select role
+3. Submit",Extracted text shown/stored,High,Working fine
+TC008,Resume Evaluation,Rate resume based on role,"1. Upload resume
+2. Select role
+3. Submit",AI-generated rating and feedback displayed,High,Working fine
+TC009,Application Logic,Prevent duplicate application,"1. Apply to a job
+2. Refresh or return to job list
+3. Try to apply again",Apply button should be disabled,High,Working fine
+TC010,Application Logic,Apply to job,"1. Click apply
+2. Resume evaluated
+3. Application submitted",Confirmation message shown,High,Working fine
+TC011,Job Listing,View jobs only when logged in,1. Try to access `/jobs` without login,Redirected to login,High,Working fine
+TC012,Job Listing,View available jobs when logged in,"1. Login
+2. Navigate to jobs page",All available jobs listed,High,Working fine
+TC013,Super Admin,Add job,"1. Login as Super Admin
+2. Go to Add Job
+3. Enter details
+4. Submit",Job added to listing,High,Working fine
+TC014,Super Admin,Delete job,1. Click delete icon for a job,Job should be removed,Medium,Working fine
+TC015,Super Admin,View all jobs,"1. Login as Super Admin
+2. Open job listing",Full job list displayed,Medium,Working fine
+TC016,UI/UX,"Verify Mahindra red theme,Resposiveness","1. Visit all pages
+2. Check UI colors, logo, buttons",Consistent red theme with branding,Low,Assigned
+TC017,Session Handling,Logout functionality,"1. Click Logout
+2. Try accessing secure page",Redirect to login page,Medium,Working fine
+TC018,Authentication,Forgot password with registered email,"1. Click 'Forgot Password'
+2. Enter valid registered email
+3. Submit",Password reset email should be sent,High,Working fine
+TC019,Authentication,Forgot password with registered email,"1. Click 'Forgot Password'
+2. Enter valid registered email
+3. Submit
+4. open mail
+5. Click on LInk
+6. Enter new Password
+7. Confirm password
+8. submit","User should able to reset the password and able
+to login through new password",High,Working fine
+TC020,Admin Authentication,Login with valid admin credentials,"1. Go to \admin-login
+2. Enter Valid Username/Password
+3. Submit",Admin Should able to login,High,Working fine
