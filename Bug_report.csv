@@ -1,0 +1,8 @@
+Bug ID,Test Case ID,Description,Severity,Status
+BUG001,TC018,"Able to upload unsupported file types (e.g., .jpg, .docx)",High,Open
+BUG002,UI/UX,Home page image appears blurry on different screen sizes,Medium,Open
+BUG003,N/A,No logout option visible on home page,Medium,Open
+BUG004,UI/UX,Website is not responsive on mobile devices,High,Open
+BUG005,Resume Upload,Not Able to parse multiple Resume at once,Medium,Open
+BUG006,Filter_resume,Anyone can access the page ,High,Open
+BUG007,Admin panel access,No user shlould able to get admin ,High,Open
